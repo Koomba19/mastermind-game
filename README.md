@@ -7,7 +7,8 @@ A Hack-a-Thon project re-creating the board game "Mastermind" for Devslopes
  The game is hosted using GitHub pages
 
  ## Roadmap
- 3/24 - 3/25  
+ 
+ ### 3/24 - 3/25  
  - [x] Create GitHub repo and page  
  - [x] Basic Structure in place
  - [x] Brainstorm  
