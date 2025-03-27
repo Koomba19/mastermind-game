@@ -7,8 +7,101 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1 style="text-align: center; margin-top: 100px;">Mastermind Coming Soon</h1>
-    
+    <h1 style="text-align: center; margin-top: 100px; display: none;">Mastermind Coming Soon</h1>
+    <div id="gameBoard" class="game-board"> <!-- big box to control size of board-->
+      <div id="secretCode" class="section"> <!-- top of board, for secret code-->
+      </div>
+      <div id="gameHistorySection" class="section">
+        <table id="gameHistoryTable" class="game-history-table"> <!-- ten rows, left side feedback, right side guess history-->
+          <tr id="turn-10">
+            <td id="results-10"></td>
+            <td id="attempt-10"></td>
+          </tr>
+          <tr id="turn-9">
+            <td id="results-9"></td>
+            <td id="attempt-9"></td>
+          </tr>
+          <tr id="turn-8">
+            <td id="results-8"></td>
+            <td id="attempt-8"></td>
+          </tr>
+          <tr id="turn-7">
+            <td id="results-7"></td>
+            <td id="attempt-7"></td>
+          </tr>
+          <tr id="turn-6">
+            <td id="results-6"></td>
+            <td id="attempt-6"></td>
+          </tr>
+          <tr id="turn-5">
+            <td id="results-5"></td>
+            <td id="attempt-5"></td>
+          </tr>
+          <tr id="turn-4">
+            <td id="results-4"></td>
+            <td id="attempt-4"></td>
+          </tr>
+          <tr id="turn-3">
+            <td id="results-3"></td>
+            <td id="attempt-3"></td>
+          </tr>
+          <tr id="turn-2">
+            <td id="results-2"></td>
+            <td id="attempt-2"></td>
+          </tr>
+          <tr id="turn-1">
+            <td id="results-1"></td>
+            <td id="attempt-1"></td>
+          </tr>
+        </table>
+      </div>
+      <div id="codeAttemptSection" class="section">
+        <table id="codeAttemptTable" class="code-attempt-table">
+          <tr>
+            <td>
+              <select id="color-1">
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+              </select>              
+            </td>
+            <td>
+              <select id="color-2">
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+              </select>              
+            </td>
+            <td>
+              <select id="color-3">
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+              </select>
+            </td>
+            <td>
+              <select id="color-4">
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
   <script src="script.js"></script>
 </body>
 </html>
