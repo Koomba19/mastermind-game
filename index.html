@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1 style="text-align: center; margin-top: 100px; display: none;">Mastermind Coming Soon</h1>
+    <h1 style="text-align: center; margin-top: 100px;">Mastermind Coming Soon</h1>
     <div id="gameBoard" class="game-board"> <!--big box to control size of board-->
       <div id="secretCode" class="section"> <!--top of board, for secret code-->
       </div>
@@ -58,6 +58,9 @@
       <div id="codeAttemptSection" class="section"><!--Player Attempt section with peg selection-->
         <table id="codeAttemptTable" class="code-attempt-table">
           <tr>
+            <td id="button-submission-block">
+              <button id="submissionButton" type="button">Submit</button>
+            </td>
             <td>
               <select id="color-1">
                 <option value="red">Red</option>
