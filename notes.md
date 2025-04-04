@@ -82,6 +82,14 @@ Though the same could be said for writing all your CSS and JS inside of your ind
 - found out the Array.from only works on "iterables" so objects don't work in them
 - Dug into array.prototype, that is remarkably similar to class. But prototype came first and still technically builds the class object stuff.
 
+## 4/4 Things I did today
+
+- Made the white peg counter. It took a lot of refactoring  
+First I was mutating the playerAttempt to be null, but it wasn't working AND wasn't a good practice for getting it into history
+- Made the comparitor to the secretCode  
+Really happy with how the nested if conditionals came out with the matchedGuesses array being my middle man. AND gates for the win!
+- With a console log, the game is actually playable. It doesn't stop at 10 turns yet, but i did make a little win statement for 4 black pegs.
+
 ## I stopped using AI to help take notes. I don't read them anyway. I figure it's also quite noticable, what with the emojis everywhere. Who talks like that?
 
 - I had this file hidden with a gitignore. Found out that was a thing too, which is cool. But let's put it all out there for this project.
