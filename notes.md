@@ -1,4 +1,4 @@
-# Mastermind – Dev Notes
+# Mastermind – Dev Notes 3/25
 
 ## 🏗️ HTML Phase – Build Summary
 
@@ -68,27 +68,33 @@
 
 # Truth will set you free. All those previous notes were done by an AI
 
-## 4/4 I've been busy with work so progress stalled out, here's what I've got from the last 3 days.
+- No worries on authenticity. I was only plugging what I built into the prompts to help me write up notes and milestones. But it was getting tedious so I stopped.
+
+## 4/4 I've been busy with my day job so progress stalled out, here's what I've got from the last 3 days.
 
 - wrote up script.js
-- investigated the DOM. Now I know that the basic HTML in index.html is really only there to give the page something to load.  
+- investigated what a DOM is. Now I know that the basic HTML in index.html is really only there to give the page something to load.  
 Everything can be done with Javascript and CSS if you're masochistic.  
 Though the same could be said for writing all your CSS and JS inside of your index.html
-- discovered class objects, decided to go with that for main loop
+- discovered class objects, decided to go with that for main game loop.
 - no global variables. Apparently it's considered bad practice for browser games.
 - found out about arrow functions, that's witchcraft.
 - Event listeners have some kooky bubble thing going on. But it's neat how there's so many of them.
-- found out about "this" and what a pain it is. .bind seems to be worth internalizing
-- found out the Array.from only works on "iterables" so objects don't work in them
+- found out about "this" and what a pain it is. .bind seems to be required for making it work 90% of the time
+- found out the Array.from only works on "iterables" so objects don't work in them. Discarded the idea to use it.
 - Dug into array.prototype, that is remarkably similar to class. But prototype came first and still technically builds the class object stuff.
 
 ## 4/4 Things I did today
 
 - Made the white peg counter. It took a lot of refactoring  
-First I was mutating the playerAttempt to be null, but it wasn't working AND wasn't a good practice for getting it into history
+First I was mutating the playerAttempt to be null, but it wasn't working aswell wasn't a good practice for getting it into history
 - Made the comparitor to the secretCode  
 Really happy with how the nested if conditionals came out with the matchedGuesses array being my middle man. AND gates for the win!
 - With a console log, the game is actually playable. It doesn't stop at 10 turns yet, but i did make a little win statement for 4 black pegs.
+- Ran into some weird issues with the history array of objects where sometimes the history would just change, like feedback.  
+I did end up going to AI for help on that and learned about spread syntax. It creates a new and shallow copy instead of a reference/pointer  
+which is apparently what I was doing before, just making pointers point to more pointers. I get it, but I do need to read up on spreaders and the rest property more.  
+Since I don't think the original purpose is to make a copy of the value. But I really need to look at syntax for it. Took like 4 tries before I got the syntax down correctly since it changes from use to use. Definitly helping to cement just how different arrays, objects, and primitives are.
 
 ## I stopped using AI to help take notes. I don't read them anyway. I figure it's also quite noticable, what with the emojis everywhere. Who talks like that?
 
