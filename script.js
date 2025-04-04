@@ -42,9 +42,11 @@ class mastermind {
 
         //white pegs
         for (let i = 0; i < 4; i++) {
-            colorCounter[this.secretCode[i]]++
+            colorCounter[this.secretCode[i]]++;
+            console.log(colorCounter);
         }
-
+        //colors are counted. Now we have to compare them to the player guesses remaining, unnulled, colors. I'm thinking that we go through the index of the player guess
+        //break if it's null, then count down to zero. If the counter is already zero, we break, otherwise whitePeg++ and counter down
     }
 //note to self. Plan: when the button is pushed is when the dropdowns should be read and made into an array. Then push the array into a comparison, which pushes out the feedback
     attemptSubmissionListener() {
