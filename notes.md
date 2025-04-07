@@ -101,7 +101,8 @@ Since I don't think the original purpose is to make a copy of the value. But I r
 - I've finally learned how to use things like innerHTML  
 There are a lot of things that the DOM can change. So worth looking at and playing around.
 - refactored the ID on most of the table so the instead of starting on feedback-1-1, it starts on feedback-0-1  
-This makes it so much simpler to avoid making mistakes when calling this.turn for the appropriate number to check the arrays
+This makes it so much simpler to avoid making mistakes when calling "this.turn" for the appropriate number to check the arrays
+- Didn't get to CSS in time, but I intend to finish this project during the following weeks, as I am proud of it
 
 ## I stopped using AI to help take notes. I don't read them anyway. I figure it's also quite noticable, what with the emojis everywhere. Who talks like that?
 

@@ -17,7 +17,7 @@ A Hack-a-Thon project re-creating the board game "Mastermind" for Devslopes
 - [x] Handle Player Input DONE 4/2
 - [x] Compare Guesses  DONE 4/4
 - [x] Give Feedback (Black and white pegs) DONE 4/4 
-- [ ] Render input, feedback, and guesses on-screen  
+- [x] Render input, feedback, and guesses on-screen  DONE 4/7
   
 ### 3/29 - 3/30  
 - [ ] Layout styling to board game format  
