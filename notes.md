@@ -96,6 +96,13 @@ I did end up going to AI for help on that and learned about spread syntax. It cr
 which is apparently what I was doing before, just making pointers point to more pointers. I get it, but I do need to read up on spreaders and the rest property more.  
 Since I don't think the original purpose is to make a copy of the value. But I really need to look at syntax for it. Took like 4 tries before I got the syntax down correctly since it changes from use to use. Definitly helping to cement just how different arrays, objects, and primitives are.
 
+## 4/7 Some updates before the big send off
+
+- I've finally learned how to use things like innerHTML  
+There are a lot of things that the DOM can change. So worth looking at and playing around.
+- refactored the ID on most of the table so the instead of starting on feedback-1-1, it starts on feedback-0-1  
+This makes it so much simpler to avoid making mistakes when calling this.turn for the appropriate number to check the arrays
+
 ## I stopped using AI to help take notes. I don't read them anyway. I figure it's also quite noticable, what with the emojis everywhere. Who talks like that?
 
 - I had this file hidden with a gitignore. Found out that was a thing too, which is cool. But let's put it all out there for this project.
