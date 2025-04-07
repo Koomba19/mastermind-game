@@ -8,6 +8,24 @@ class mastermind {
         this.matchedGuesses = [];
         this.attemptSubmissionListener();
     }
+
+    //WOrking on issues here
+    updateHistory() {
+        let totalPegs = this.attemptHistory[this.turn].feedback.black + this.attemptHistory[this.turn].feedback.white;
+
+        for (totalPegs; totalPegs > this.attemptHistory[this.turn].feedback.black; totalPegs--){
+            document.getElementById(`results-${this.turn}-${totalPegs}`).innerHTML = 'white';
+        }
+        for (totalPegs; totalPegs > 0; totalPegs--) {
+            document.getElementById(`results-${this.turn}-${totalPegs}`).innerHTML = 'black';
+        }
+        for (let colorHistory = 0; colorHistory < 4; colorHistory++) {
+            console.log(this.turn);
+            console.log(colorHistory);
+            console.log(this.attemptHistory[this.turn].playerAttempt[colorHistory]);
+            document.getElementById(`attempt-${this.turn}-${colorHistory + 1}`).innerHTML = `${this.attemptHistory[this.turn].playerAttempt[colorHistory]}`;
+        }
+    }
     
     submissionAndFeedback() {
         this.feedbackPegs = {black : 0, white: 0};
@@ -22,6 +40,7 @@ class mastermind {
             playerAttempt : [...this.playerAttempt]
         };
         this.attemptHistory.push(turnHistory);
+        this.updateHistory();
         this.turn++;
         console.log(this.attemptHistory);
         if (this.feedbackPegs.black === 4){

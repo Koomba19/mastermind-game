@@ -8,51 +8,111 @@
 </head>
 <body>
     <h1 style="text-align: center; margin-top: 100px;">Mastermind Coming Soon</h1>
-    <h2 style="text-align: center; margin-top: 100px;">If you want to play, you can!<br>Just open dev tools, go to sources -> Console -> and press Submit to watch the magic happen</h2>"
+    <h2 style="text-align: center; margin-top: 100px;">If you want to play, you can!<br>Just open dev tools, go to sources -> Console -> and press Submit to watch the magic happen</h2>
     <div id="gameBoard" class="game-board"> <!--big box to control size of board-->
       <div id="secretCode" class="section"> <!--top of board, for secret code-->
       </div>
       <div id="gameHistorySection" class="section">
         <table id="gameHistoryTable" class="game-history-table"> <!--ten rows, left side feedback, right side guess history-->
-          <tr id="turn-10">
-            <td id="results-10"></td>
-            <td id="attempt-10"></td>
-          </tr>
           <tr id="turn-9">
-            <td id="results-9"></td>
-            <td id="attempt-9"></td>
+            <td id="results-9-1" class = "feedback-side"></td>
+            <td id="results-9-2" class = "feedback-side"></td>
+            <td id="results-9-3" class = "feedback-side"></td>
+            <td id="results-9-4" class = "feedback-side"></td>
+            <td id="attempt-9-1" class = "attempt-side"></td>
+            <td id="attempt-9-2" class = "attempt-side"></td>
+            <td id="attempt-9-3" class = "attempt-side"></td>
+            <td id="attempt-9-4" class = "attempt-side"></td>
           </tr>
           <tr id="turn-8">
-            <td id="results-8"></td>
-            <td id="attempt-8"></td>
+            <td id="results-8-1" class = "feedback-side"></td>
+            <td id="results-8-2" class = "feedback-side"></td>
+            <td id="results-8-3" class = "feedback-side"></td>
+            <td id="results-8-4" class = "feedback-side"></td>
+            <td id="attempt-8-1" class = "attempt-side"></td>
+            <td id="attempt-8-2" class = "attempt-side"></td>
+            <td id="attempt-8-3" class = "attempt-side"></td>
+            <td id="attempt-8-4" class = "attempt-side"></td>
           </tr>
           <tr id="turn-7">
-            <td id="results-7"></td>
-            <td id="attempt-7"></td>
+            <td id="results-7-1" class = "feedback-side"></td>
+            <td id="results-7-2" class = "feedback-side"></td>
+            <td id="results-7-3" class = "feedback-side"></td>
+            <td id="results-7-4" class = "feedback-side"></td>
+            <td id="attempt-7-1" class = "attempt-side"></td>
+            <td id="attempt-7-2" class = "attempt-side"></td>
+            <td id="attempt-7-3" class = "attempt-side"></td>
+            <td id="attempt-7-4" class = "attempt-side"></td>
           </tr>
           <tr id="turn-6">
-            <td id="results-6"></td>
-            <td id="attempt-6"></td>
+            <td id="results-6-1" class = "feedback-side"></td>
+            <td id="results-6-2" class = "feedback-side"></td>
+            <td id="results-6-3" class = "feedback-side"></td>
+            <td id="results-6-4" class = "feedback-side"></td>
+            <td id="attempt-6-1" class = "attempt-side"></td>
+            <td id="attempt-6-2" class = "attempt-side"></td>
+            <td id="attempt-6-3" class = "attempt-side"></td>
+            <td id="attempt-6-4" class = "attempt-side"></td>
           </tr>
           <tr id="turn-5">
-            <td id="results-5"></td>
-            <td id="attempt-5"></td>
+            <td id="results-5-1" class = "feedback-side"></td>
+            <td id="results-5-2" class = "feedback-side"></td>
+            <td id="results-5-3" class = "feedback-side"></td>
+            <td id="results-5-4" class = "feedback-side"></td>
+            <td id="attempt-5-1" class = "attempt-side"></td>
+            <td id="attempt-5-2" class = "attempt-side"></td>
+            <td id="attempt-5-3" class = "attempt-side"></td>
+            <td id="attempt-5-4" class = "attempt-side"></td>
           </tr>
           <tr id="turn-4">
-            <td id="results-4"></td>
-            <td id="attempt-4"></td>
+            <td id="results-4-1" class = "feedback-side"></td>
+            <td id="results-4-2" class = "feedback-side"></td>
+            <td id="results-4-3" class = "feedback-side"></td>
+            <td id="results-4-4" class = "feedback-side"></td>
+            <td id="attempt-4-1" class = "attempt-side"></td>
+            <td id="attempt-4-2" class = "attempt-side"></td>
+            <td id="attempt-4-3" class = "attempt-side"></td>
+            <td id="attempt-4-4" class = "attempt-side"></td>
           </tr>
           <tr id="turn-3">
-            <td id="results-3"></td>
-            <td id="attempt-3"></td>
+            <td id="results-3-1" class = "feedback-side"></td>
+            <td id="results-3-2" class = "feedback-side"></td>
+            <td id="results-3-3" class = "feedback-side"></td>
+            <td id="results-3-4" class = "feedback-side"></td>
+            <td id="attempt-3-1" class = "attempt-side"></td>
+            <td id="attempt-3-2" class = "attempt-side"></td>
+            <td id="attempt-3-3" class = "attempt-side"></td>
+            <td id="attempt-3-4" class = "attempt-side"></td>
           </tr>
           <tr id="turn-2">
-            <td id="results-2"></td>
-            <td id="attempt-2"></td>
+            <td id="results-2-1" class = "feedback-side"></td>
+            <td id="results-2-2" class = "feedback-side"></td>
+            <td id="results-2-3" class = "feedback-side"></td>
+            <td id="results-2-4" class = "feedback-side"></td>
+            <td id="attempt-2-1" class = "attempt-side"></td>
+            <td id="attempt-2-2" class = "attempt-side"></td>
+            <td id="attempt-2-3" class = "attempt-side"></td>
+            <td id="attempt-2-4" class = "attempt-side"></td>
           </tr>
           <tr id="turn-1">
-            <td id="results-1"></td>
-            <td id="attempt-1"></td>
+            <td id="results-1-1" class = "feedback-side"></td>
+            <td id="results-1-2" class = "feedback-side"></td>
+            <td id="results-1-3" class = "feedback-side"></td>
+            <td id="results-1-4" class = "feedback-side"></td>
+            <td id="attempt-1-1" class = "attempt-side"></td>
+            <td id="attempt-1-2" class = "attempt-side"></td>
+            <td id="attempt-1-3" class = "attempt-side"></td>
+            <td id="attempt-1-4" class = "attempt-side"></td>
+          </tr>
+          <tr id="turn-0">
+            <td id="results-0-1" class = "feedback-side"></td>
+            <td id="results-0-2" class = "feedback-side"></td>
+            <td id="results-0-3" class = "feedback-side"></td>
+            <td id="results-0-4" class = "feedback-side"></td>
+            <td id="attempt-0-1" class = "attempt-side"></td>
+            <td id="attempt-0-2" class = "attempt-side"></td>
+            <td id="attempt-0-3" class = "attempt-side"></td>
+            <td id="attempt-0-4" class = "attempt-side"></td>
           </tr>
         </table>
       </div>
